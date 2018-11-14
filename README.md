@@ -26,6 +26,6 @@ After reloading the application, we can launch the Console at  [http://localhost
 
 For example: &quot;Retrieve the hero with the name &#39;Iron Man&#39; from the database&quot;.
 
-![](C:\Users\tstankovska\Downloads=true "data")
+![](https://github.com/TamaraStankovska/spring-data-jpa/blob/master/data.PNG)
 
 This can be done with the executing the following query in the Console, or by writing a query in the Application.
