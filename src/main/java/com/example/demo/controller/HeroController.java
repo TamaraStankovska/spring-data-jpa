@@ -2,11 +2,11 @@ package com.example.demo.controller;
 
 import com.example.demo.model.Hero;
 import com.example.demo.repository.HeroRepository;
-import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class HeroController {
@@ -31,6 +31,10 @@ public class HeroController {
     public List<Hero> listHeroById(@PathVariable Long id) {
         return (List<Hero>) heroRepository.findAllById(id);
     }
+
+    @GetMapping("hero/{name}")
+    @ResponseBody
+    public Optional<Hero> listHeroByName(@PathVariable String name){ return heroRepository.findHeroByName(name);}
 
 
 
