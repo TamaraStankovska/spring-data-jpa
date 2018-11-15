@@ -8,7 +8,7 @@ This project is made using Java Spring Boot framework, with the following depend
 - JPA;
 - H2.
 
-Autoconfiguration is used in the back-end, also known as annotation-based configuration. The models used for this project are: Hero and Power. Hero has the following properties: Long id, String name, String studio and List\&lt;Power\&gt; powers, where Power is of type &quot;enum&quot;.
+Autoconfiguration is used in the back-end, also known as annotation-based configuration. The models used for this project are: Hero and Power. Hero has the following properties: Long id, String name, String studio and List < Power > powers, where Power is of type &quot;enum&quot;.
 
 # 2. Annotations
 
