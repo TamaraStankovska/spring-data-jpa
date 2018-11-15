@@ -28,4 +28,4 @@ For example: &quot;Retrieve the hero with the name &#39;Iron Man&#39; from the d
 
 ![](https://github.com/TamaraStankovska/spring-data-jpa/blob/master/data.PNG)
 
-This can be done with the executing the following query in the Console, or by writing a query in the Application.
+This can be done with the executing the following query in the Console, or by requesting data from the Controller.
