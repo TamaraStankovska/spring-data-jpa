@@ -26,18 +26,18 @@ public class HeroController {
     }
 
 
-    @GetMapping("/hero/{id}")
+    @GetMapping("/hero/findById/{id}")
     @ResponseBody
-    public List<Hero> listHeroById(@PathVariable Long id) {
-        return (List<Hero>) heroRepository.findAllById(id);
+    public Optional<Hero> listHeroById(@PathVariable(value = "id") Long id) {
+        return heroRepository.findById(id);
     }
 
-    @GetMapping("hero/{name}")
+    @GetMapping("/hero/{name}")
     @ResponseBody
-    public Optional<Hero> listHeroByName(@PathVariable String name){ return heroRepository.findHeroByName(name);}
-
-
-
+    public Hero listHeroByName(@PathVariable(value = "name") String name){
+        Hero hero = heroRepository.findByName(name);
+        return hero;
+    }
 
     @RequestMapping(value = "/hero",method = RequestMethod.POST)
     @ResponseBody
